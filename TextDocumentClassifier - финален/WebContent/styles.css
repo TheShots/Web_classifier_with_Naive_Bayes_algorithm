@@ -1,0 +1,217 @@
+body {
+	box-sizing: border-box;
+	height: 100vh;
+    margin: 0;
+	padding: 2vh 2vw;	
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1.1em; 	
+    color: rgb(60, 60, 100);
+}
+
+header {
+	padding: 3vh;
+}
+
+header h1 {
+	margin: 0;
+	verical-align: middle;
+}
+
+button, input[type="button"] {
+	width: 16vw;
+	height: 6vh;
+	margin: 1vh 1vw;
+	padding: 0.75vh 0.75vw;
+	border: solid 2px rgb(60, 60, 100);
+	border-radius: 5px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 0.95em;
+}
+
+button, .button {
+	background-color: rgb(245, 245, 255);
+	color: rgb(60, 60, 100);
+}
+
+input[type="text"] {	
+	margin: 0;
+	padding: 0.5vh 0.5vw;
+	border: thin solid rgb(60, 60, 100);
+	border-radius: 5px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+textarea {	
+	padding: 0.5vh 0.5vw;
+	vertical-align: top;
+	resize: none;
+	border: thin solid rgb(60, 60, 100);
+	border-radius: 5px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+ul {
+	list-style-type: none;
+	margin: 1vh 2vw 0;
+}
+
+h3 {
+	margin: 2vh auto 1vh;
+}
+
+h4 {
+	margin: 0 0.5vw 0 2vw;
+}
+
+#container {
+	box-sizing: border-box;
+	position: relative;
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;	
+	padding: 2vh 5vw;
+	border: thick solid rgb(60, 60, 100);
+	border-radius: 20px;
+	background-color: rgb(245, 245, 255);
+}
+
+#categorySection {
+	height: 32vh;
+}
+
+#categorySection h4 {
+	display: inline;
+}
+
+#categoryList {
+	height: 22vh;
+	padding: 0;
+	overflow: auto;
+}
+
+#categoryList li {
+	margin: 1vh auto;
+	padding: 1vh auto;
+	vertical-align: top;
+	border-radius: 10px;
+}
+
+#settingsSection {
+	padding: 3vh;
+}
+
+#settingsSection h4 {
+	display: inline;
+	vertical-align: middle;
+}
+
+#docSection table {
+	height: 25vh;
+	width: 55vw;
+	margin: 2vh auto;
+}
+
+#docList {
+	display: inline-block;
+	width: 25vw;
+	height: 25vh;
+	margin: 0;
+	padding: 0 0.5vw;
+	overflow: auto;
+	border: solid medium rgb(60, 60, 100);
+	border-radius: 10px;
+	background-color: white;
+}
+
+#docList li {
+	border-radius: 5px;
+	font-size: 0.75em;
+	margin: 0.5vh 0.25vw;
+	padding: 0 0.5vw;
+	text-align: left;
+}
+
+#classifyButton {
+	font-weight: bold;
+}
+
+#helpIcon {
+	position: absolute;
+	bottom: 2vh;
+	right: 2vh;
+	height: 5vh;
+	width: auto;
+}
+
+#helpInfo {
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 2;
+	top: 12vh;
+	left: 1vw;
+	width: 50vw;
+	height: 80vh;
+	padding: 2vh 2vw;
+	overflow: auto;
+	border: medium solid rgb(60, 60, 100);
+	border-radius: 15px;
+	background-color: rgb(245, 245, 255);
+	text-align: left;
+}
+
+#downloadLink {
+	position: relative;
+	bottom: 15vh;
+	padding: 3vh 3vw;
+	border: 5px solid rgb(60, 60, 100);
+	border-radius: 10px;
+	background-color: white;
+}
+
+.category {
+	background-color: rgb(245, 245, 255);
+	color: rgb(60, 60, 100);
+}
+
+.selectedItem {
+	background-color: rgb(60, 60, 100);
+	color: white;
+}
+
+.hoveredItem {
+	background-color: rgb(160, 160, 200);
+	color: white;
+	cursor: pointer;
+}
+
+.hoveredButton {
+	background-color: rgb(60, 60, 100);
+	color: white;
+	cursor: pointer;
+}
+
+.hoveredHeading {
+	color: white;
+}
+
+.hidden {
+	display: none;
+}
+
+.disabled {
+	background-color: rgb(192, 192, 192);
+	color: rgb(60, 60, 100);
+}
+
+.focusedInput {
+	outline: none;
+}
+
+.pointer {
+	cursor: pointer;
+}

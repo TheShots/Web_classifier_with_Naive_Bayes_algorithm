@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Text Document Classifier</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="favicon" href="images/favicon.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="text-document-classifier.js"></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Text Document Classifier</h1>
+		</header>
+		<section id="docSection">
+			<table>
+				<thead>
+					<tr>
+						<th>Documents</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="4">
+							<ul id="docList"></ul>
+						</td>
+						<td>
+							<input type="file" name="docChooser" id="docChooser" accept="application/pdf" multiple/>
+							<input type="button" id="docChooserButton" value="Add Documents" class="button"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="removeDocButton" value="Remove Documents" class="button disabled" disabled/></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="Classify!" id="classifyButton" class="button"/></td>
+					</tr>
+				</tbody>
+			</table>
+			<img id="helpIcon" src="images/help.png">	
+			<div id="helpInfo" class="hidden">
+				<h3>Help</h3>
+				<p>Welcome to the text document classifier!</p>
+				<p>
+					This application lets you classify documents according to categories, specified by you.
+					Categorization is accomplished via an adaptation of the Naive Bayes algorithm
+					which is based on applying Bayes' theorem with strong (naive) independence assumptions between the features,
+					occuring in the provided documents.
+				</p>
+				<p>
+					The documents to be classified are currently restricted to PDF format. To upload documents
+					for categorization, press the "Add Documents" and select the desired ones from your machine.
+					Multiple categories can be supplied simultaneously. To remove an already uploaded document,
+					select it from the list and press "Remove Documents".
+				</p>
+				<p>
+					When you have supplied all documents, press the "Classify!" button.
+					After a short processing phase you'll be presented with a download link. Click on the link
+					to download your categorization results.
+				</p>
+				<button id="helpOKButton">Got it!</button>
+			</div>
+			<a id="downloadLink" class="hidden" download>Download</a>
+		</section>
+	</div>
+</body>
+</html>

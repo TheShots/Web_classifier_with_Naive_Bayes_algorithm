@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name>docsServlet</servlet-name>
+    <servlet-class>request.manager.DocsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>docsServlet</servlet-name>
+    <url-pattern>/docs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>categoriesServlet</servlet-name>
+    <servlet-class>request.manager.CategoriesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>categoriesServlet</servlet-name>
+    <url-pattern>/categories</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>keywordsServlet</servlet-name>
+    <servlet-class>request.manager.KeywordsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>keywordsServlet</servlet-name>
+    <url-pattern>/keywords</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>classifierServlet</servlet-name>
+    <servlet-class>request.manager.ClassifierServlet</servlet-class>
+    <multipart-config>
+      <max-file-size>20971520</max-file-size>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>classifierServlet</servlet-name>
+    <url-pattern>/classify</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>request.manager.SessionListener</listener-class>
+  </listener>
+</web-app>
